@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Luma Estates</title>
+    <meta
+      name="description"
+      content="Contact Luma Estates to schedule a private home tour, request a valuation, or discuss your buying and selling goals."
+    />
+    <link rel="canonical" href="https://example.com/contact.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Luma Estates Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Luma Estates
+        </a>
+        <button class="mobile-toggle" type="button" data-mobile-toggle aria-expanded="false" aria-label="Open menu">
+          ☰
+        </button>
+        <nav class="site-nav" data-site-nav data-open="false" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Listings</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="container">
+          <span class="eyebrow" data-reveal>Contact us</span>
+          <h1 data-reveal>Let’s plan your next move.</h1>
+          <p class="lead" data-reveal style="margin-top: 12px">
+            Share your goals and timeline, and our team will build a personalized strategy for buying, selling, or
+            investing.
+          </p>
+        </div>
+      </section>
+
+      <section style="padding-top: 20px">
+        <div class="container split">
+          <article class="card" data-reveal>
+            <div class="card-body">
+              <h2 style="font-size: 1.5rem">Send a message</h2>
+              <p style="margin-top: 8px">We typically respond within one business day.</p>
+              <form class="form-grid" data-contact-form style="margin-top: 16px" novalidate>
+                <div class="field">
+                  <label for="firstName">First Name</label>
+                  <input id="firstName" name="firstName" type="text" required autocomplete="given-name" />
+                </div>
+                <div class="field">
+                  <label for="lastName">Last Name</label>
+                  <input id="lastName" name="lastName" type="text" required autocomplete="family-name" />
+                </div>
+                <div class="field">
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="email" required autocomplete="email" />
+                </div>
+                <div class="field">
+                  <label for="service">I'm interested in</label>
+                  <select id="service" name="service" required>
+                    <option value="">Select one</option>
+                    <option value="buying">Buying a home</option>
+                    <option value="selling">Selling a home</option>
+                    <option value="investing">Investment opportunities</option>
+                    <option value="valuation">Home valuation</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit request</button>
+                <p data-form-status aria-live="polite" role="status"></p>
+              </form>
+            </div>
+          </article>
+          <aside class="cards-grid" data-reveal>
+            <article class="card">
+              <div class="card-body">
+                <h3>Office</h3>
+                <p style="margin-top: 6px">118 Harbor Avenue, Suite 400<br />Seattle, WA 98101</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <h3>Direct Contact</h3>
+                <p style="margin-top: 6px">hello@lumaestates.com<br />(555) 142-8891</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <h3>Open Hours</h3>
+                <p style="margin-top: 6px">Mon - Fri: 8:00 AM - 7:00 PM<br />Sat: 9:00 AM - 5:00 PM</p>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span data-year></span> Luma Estates. All rights reserved.</p>
+        <p>hello@lumaestates.com • (555) 142-8891</p>
+      </div>
+    </footer>
+    <script src="main.js" defer></script>
+  </body>
+</html>
