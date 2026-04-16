@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Veloura Atelier</title>
+    <meta
+      name="description"
+      content="Secure checkout at Veloura Atelier for luxury gold and diamond jewelry purchases."
+    />
+    <meta name="theme-color" content="#050505" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Checkout | Veloura Atelier" />
+    <meta
+      property="og:description"
+      content="Complete your Veloura Atelier order with secure, encrypted checkout and insured delivery."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/lookbook-model-bracelet-studio.png" />
+    <meta property="og:url" content="https://example.com/veloura-jewelry-store/checkout.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Checkout | Veloura Atelier" />
+    <meta
+      name="twitter:description"
+      content="Elegant and secure checkout for couture-level jewelry pieces."
+    />
+    <meta name="twitter:image" content="assets/lookbook-model-bracelet-studio.png" />
+    <link rel="canonical" href="https://example.com/veloura-jewelry-store/checkout.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-loading">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="glow glow-1" aria-hidden="true"></div>
+    <div class="glow glow-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Veloura Atelier Home">
+          <span class="brand-mark" aria-hidden="true">V</span>
+          Veloura Atelier
+        </a>
+        <button
+          class="menu-btn"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-controls="checkout-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="checkout-nav" data-site-nav aria-label="Main navigation">
+          <a href="index.html#new-arrivals">New Arrivals</a>
+          <a href="index.html#signature">Signature</a>
+          <a href="index.html#lookbook">Lookbook</a>
+          <a href="index.html#support">Questions & Concerns</a>
+          <a href="checkout.html">Checkout</a>
+        </nav>
+        <a class="cart-btn" href="index.html#new-arrivals" aria-label="Continue shopping">
+          Shop
+          <span class="cart-count">+</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero checkout-hero">
+        <div class="container">
+          <p class="eyebrow" data-reveal>Secure checkout</p>
+          <h1 data-reveal>An elegant finish to your Veloura order.</h1>
+          <p class="lead" data-reveal>
+            Complete your purchase with encrypted checkout, insured delivery, and white-glove concierge support.
+          </p>
+        </div>
+      </section>
+
+      <section class="checkout-section">
+        <div class="container checkout-layout">
+          <article class="checkout-panel" data-reveal>
+            <h2>Shipping & Payment</h2>
+            <form class="checkout-form" data-checkout-form novalidate>
+              <div class="checkout-grid two">
+                <label>
+                  First Name
+                  <input type="text" name="firstName" required autocomplete="given-name" />
+                </label>
+                <label>
+                  Last Name
+                  <input type="text" name="lastName" required autocomplete="family-name" />
+                </label>
+              </div>
+
+              <label>
+                Email Address
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+
+              <label>
+                Street Address
+                <input type="text" name="address" required autocomplete="street-address" />
+              </label>
+
+              <div class="checkout-grid three">
+                <label>
+                  City
+                  <input type="text" name="city" required autocomplete="address-level2" />
+                </label>
+                <label>
+                  State
+                  <input type="text" name="state" required autocomplete="address-level1" />
+                </label>
+                <label>
+                  ZIP
+                  <input type="text" name="zip" required autocomplete="postal-code" />
+                </label>
+              </div>
+
+              <div class="checkout-divider" role="presentation"></div>
+
+              <label>
+                Cardholder Name
+                <input type="text" name="cardName" required autocomplete="cc-name" />
+              </label>
+
+              <label>
+                Card Number
+                <input type="text" name="cardNumber" required inputmode="numeric" autocomplete="cc-number" />
+              </label>
+
+              <div class="checkout-grid three">
+                <label>
+                  Expiration
+                  <input type="text" name="expiry" placeholder="MM/YY" required autocomplete="cc-exp" />
+                </label>
+                <label>
+                  CVC
+                  <input type="text" name="cvc" required inputmode="numeric" autocomplete="cc-csc" />
+                </label>
+                <label>
+                  Postal Code
+                  <input type="text" name="billingZip" required autocomplete="postal-code" />
+                </label>
+              </div>
+
+              <button class="btn btn-primary checkout-submit" type="submit">Place Order</button>
+              <p class="form-status" data-checkout-status role="status" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <aside class="checkout-summary" data-reveal>
+            <h2>Order Summary</h2>
+            <ul class="order-list">
+              <li class="order-item">
+                <div>
+                  <p>Solstice Diamond Ring</p>
+                  <small>18k white gold</small>
+                </div>
+                <strong>$2,450</strong>
+              </li>
+              <li class="order-item">
+                <div>
+                  <p>Starlight Drop Earrings</p>
+                  <small>Natural brilliant diamonds</small>
+                </div>
+                <strong>$1,720</strong>
+              </li>
+            </ul>
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <span>$4,170</span>
+            </div>
+            <div class="summary-row">
+              <span>Insured Shipping</span>
+              <span>$35</span>
+            </div>
+            <div class="summary-row">
+              <span>Taxes</span>
+              <span>$318</span>
+            </div>
+            <div class="summary-row total">
+              <span>Total</span>
+              <span>$4,523</span>
+            </div>
+
+            <div class="security-note">
+              <p>256-bit encrypted checkout</p>
+              <p>Fully insured signature delivery</p>
+              <p>30-day exchange support</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span data-year></span> Veloura Atelier. Crafted in New York.</p>
+        <p>hello@velouraatelier.com · +1 (212) 555-0194</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
